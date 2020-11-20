@@ -9,7 +9,7 @@ public class IncomingCallScreenActivity extends BaseActivity {
     static final String CALL_TAG = IncomingCallScreenActivity.class.getSimpleName();
     private String callId;
     private boolean isVideoOn;
-   //private AudioPlayer audioPlayer;
+   private AudioPlayer audioPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
