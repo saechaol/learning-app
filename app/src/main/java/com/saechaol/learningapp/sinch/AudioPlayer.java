@@ -12,6 +12,7 @@ import android.util.Log;
 
 import com.saechaol.learningapp.R;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
@@ -86,6 +87,18 @@ public class AudioPlayer {
         audioTrack.setLoopPoints(0, data.length / 2, 30);
 
         return audioTrack;
+    }
+
+    private static void readFileToBytes(AssetFileDescriptor fileDescriptor, byte[] data) throws IOException {
+        FileInputStream inputStream = fileDescriptor.createInputStream();
+
+        int bytesRead = 0;
+        while (bytesRead < data.length) {
+            int res = inputStream.read(data, bytesRead, (data.length - bytesRead));
+            if (res == -1)
+                break;
+            bytesRead += res;
+        }
     }
 
 }
