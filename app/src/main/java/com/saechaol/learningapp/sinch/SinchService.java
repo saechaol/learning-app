@@ -179,6 +179,7 @@ public class SinchService extends Service {
         /**
          * Notifies the listener that the client has successfully started
          * and is ready to run functions that execute at this time.
+         *
          * @param sinchClient
          */
         @Override
@@ -191,6 +192,7 @@ public class SinchService extends Service {
 
         /**
          * Notifies to the log that the client has stopped
+         *
          * @param sinchClient
          */
         @Override
@@ -200,6 +202,7 @@ public class SinchService extends Service {
 
         /**
          * Terminates the Sinch client if it fails and notifies the listener
+         *
          * @param sinchClient
          * @param sinchError
          */
@@ -213,6 +216,7 @@ public class SinchService extends Service {
 
         /**
          * Currently does nothing
+         *
          * @param sinchClient
          * @param clientRegistration
          */
@@ -223,13 +227,14 @@ public class SinchService extends Service {
 
         /**
          * Writes to the log based on the given parameters
-         * @param i the log type
-         * @param s the log area
+         *
+         * @param i  the log type
+         * @param s  the log area
          * @param s1 the log message
          */
         @Override
         public void onLogMessage(int i, String s, String s1) {
-            switch(i) {
+            switch (i) {
                 case Log.DEBUG:
                     Log.d(s, s1);
                     break;
@@ -247,24 +252,23 @@ public class SinchService extends Service {
                     break;
             }
         }
-
-        /**
-         * Implemented call listener that checks to see if the call is intended
-         * to be received or made as an audio or video call.
-         */
-        private class SinchCallClientListener implements CallClientListener {
-
-            @Override
-            public void onIncomingCall(CallClient callClient, Call call) {
-                Log.d(TAG, "Incoming call");
-                Intent intent = new Intent(SinchService.this, IncomingCallScreenActivity.class);
-                intent.putExtra(CALL_ID, call.getCallId());
-                intent.putExtra(VIDEO_CALL, call.getDetails().isVideoOffered());
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                SinchService.this.startActivity(intent);
-            }
-        }
-
-
     }
+
+    /**
+     * Implemented call listener that checks to see if the call is intended
+     * to be received or made as an audio or video call.
+     */
+    private class SinchCallClientListener implements CallClientListener {
+
+        @Override
+        public void onIncomingCall(CallClient callClient, Call call) {
+            Log.d(TAG, "Incoming call");
+            Intent intent = new Intent(SinchService.this, IncomingCallScreenActivity.class);
+            intent.putExtra(CALL_ID, call.getCallId());
+            intent.putExtra(VIDEO_CALL, call.getDetails().isVideoOffered());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            SinchService.this.startActivity(intent);
+        }
+    }
+
 }
