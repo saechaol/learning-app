@@ -39,7 +39,7 @@ public class AudioPlayer {
             mediaPlayer.setAudioStreamType(AudioManager.STREAM_RING);
 
             try {
-                mediaPlayer.setDataSource(context, Uri.parse("android.resource://" + context.getPackage() + "/" + R.raw.ringtone));
+                mediaPlayer.setDataSource(context, Uri.parse("android.resource://" + context.getPackageName() + "/" + R.raw.ringtone));
             } catch (IOException e) {
                 Log.e(LOG_TAG, "Could not set up media player object for ringtone");
                 mediaPlayer = null;
@@ -82,7 +82,7 @@ public class AudioPlayer {
                 AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT, length, AudioTrack.MODE_STATIC);
 
         byte[] data = new byte[length];
-        readFileToBytes(fd, data);
+        readFileToBytes(fileDescriptor, data);
         audioTrack.write(data, 0, data.length);
         audioTrack.setLoopPoints(0, data.length / 2, 30);
 
