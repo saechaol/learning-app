@@ -2,6 +2,8 @@ package com.saechaol.learningapp.sinch;
 
 
 import android.content.Context;
+import android.content.res.AssetFileDescriptor;
+import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.media.MediaPlayer;
@@ -20,7 +22,7 @@ public class AudioPlayer {
     static final String LOG_TAG = AudioPlayer.class.getSimpleName();
     private Context context;
     private MediaPlayer mediaPlayer;
-    private AudioTrack progressTone;
+    private AudioTrack dialTone;
     private final static int SAMPLE_RATE = 16000;
 
     public AudioPlayer(Context context) {
@@ -53,22 +55,37 @@ public class AudioPlayer {
         }
     }
 
-    public void playProgressTone() {
-        stopProgressTone();
+    public void playDialTone() {
+        stopDialTone();
         try {
-            progressTone = createProgressTone(context);
-            progressTone.play();
+            dialTone = createDialTone(context);
+            dialTone.play();
         } catch (Exception e) {
             Log.e(LOG_TAG, "Could not play dialtone", e);
         }
     }
 
-    public void stopProgressTone() {
-        if (progressTone != null) {
-            progressTone.stop();
-            progressTone.release();
-            progressTone = null;
+    public void stopDialTone() {
+        if (dialTone != null) {
+            dialTone.stop();
+            dialTone.release();
+            dialTone = null;
         }
+    }
+
+    private static AudioTrack createDialTone(Context context) throws IOException {
+        AssetFileDescriptor fileDescriptor = context.getResources().openRawResourceFd(R.raw.dialtone);
+        int length = (int) fileDescriptor.getLength();
+
+        AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_VOICE_CALL, SAMPLE_RATE,
+                AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT, length, AudioTrack.MODE_STATIC);
+
+        byte[] data = new byte[length];
+        readFileToBytes(fd, data);
+        audioTrack.write(data, 0, data.length);
+        audioTrack.setLoopPoints(0, data.length / 2, 30);
+
+        return audioTrack;
     }
 
 }
