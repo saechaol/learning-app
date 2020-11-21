@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Learning App</string>
+    <string name="appName">Learning App</string>
+    <string name="titleActivityLogin">Learning App</string>
+
+    <string name="fragmentDisplayAdminLabelName">Name: </string>
+    <string name="fragmentDisplayAdminLabelUserName">Username: </string>
+    <string name="fragmentDisplayAdminLabelEmail">Email: </string>
+
+    <string name="checkConnection">Please check your internet connection.</string>
+    <string name="invalidEmailId">Please enter a valid email.</string>
+    <string name="invalidAlternateEmail">Please enter a valid alternate email.</string>
+    <string name="invalidPhoneNumber">Please enter a valid phone number.</string>
+    <string name="emptyFieldError">Please fill out all of the required fields.</string>
+    <string name="serverError">An server connection error has occured.</string>
+    <string name="learningAppSliderOpen">Open</string>
+    <string name="learningAppSliderClose">Close</string>
 </resources>
