@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningApp" >
 
+        <service android:name=".sinch.SinchService"></service>
+
     </application>
 
 
