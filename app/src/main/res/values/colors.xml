@@ -8,6 +8,7 @@
     <color name="greyish">#f2f1f2</color>
     <color name="colorPrimary">#039be5</color>
     <color name="colorSecondary">#2277BD</color>
+    <color name="colorSecondaryVariant">#2277BD</color>
     <color name="seprator">@android:color/black</color>
     <color name="listBg">#F1F1F1</color>
     <color name="secondaryTextColor">#757575</color>
