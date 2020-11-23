@@ -30,7 +30,7 @@
                         android:layout_weight="1"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text=""
-                        android:id="@+id/mla_myinfo_txtUserName" />
+                        android:id="@+id/myInfoTextUserName" />
                 </LinearLayout>
                
             </LinearLayout>
@@ -53,7 +53,7 @@
                         android:layout_weight="1"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text=""
-                        android:id="@+id/mla_myinfo_txtFirstName" />
+                        android:id="@+id/myInfoTextFirstName" />
                 </LinearLayout>
                
             </LinearLayout>
@@ -76,7 +76,7 @@
                         android:layout_weight="1"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text=""
-                        android:id="@+id/mla_myinfo_txtLastName" />
+                        android:id="@+id/myInfoTextLastName" />
                 </LinearLayout>
                
             </LinearLayout>
@@ -99,7 +99,7 @@
                         android:layout_weight="1"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text=""
-                        android:id="@+id/mla_myinfo_txtTelephone" />
+                        android:id="@+id/myInfoTextTelephone" />
                 </LinearLayout>
                
             </LinearLayout>
@@ -122,7 +122,7 @@
                         android:layout_weight="1"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text=""
-                        android:id="@+id/mla_myinfo_txtAddress" />
+                        android:id="@+id/myInfoTextAddress" />
                 </LinearLayout>
                
             </LinearLayout>
@@ -145,7 +145,7 @@
                         android:layout_weight="1"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text=""
-                        android:id="@+id/mla_myinfo_txtEmailId" />
+                        android:id="@+id/myInfoTextEmailId" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -168,7 +168,7 @@
                         android:layout_weight="1"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:text=""
-                        android:id="@+id/mla_myinfo_txtAliasMailId" />
+                        android:id="@+id/myInfoTextAliasMailId" />
                 </LinearLayout>
                
             </LinearLayout>

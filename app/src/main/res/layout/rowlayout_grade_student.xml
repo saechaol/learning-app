@@ -23,7 +23,7 @@
                 android:layout_weight="1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text=""
-                android:id="@+id/mla_gradestudent_txtTopic" />
+                android:id="@+id/gradeStudentTextTopic" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,12 +41,12 @@
                 android:layout_weight="1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text=""
-                android:id="@+id/mla_gradestudent_txtGrade" />
+                android:id="@+id/gradeStudentTextGrade" />
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/mla_seprator">
+            android:background="@color/separator">
         </View>
     </LinearLayout>
 

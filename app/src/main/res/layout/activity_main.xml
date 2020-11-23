@@ -12,7 +12,7 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:paddingTop="16dp"
-        tools:context="com.paril.mlaclientapp.ui.activity.MainActivity">
+        tools:context="com.saechaol.learningapp.ui.activity.MainActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/mla_login_txtUserName"
+                android:id="@+id/loginTextUserName"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:gravity="center_horizontal"
@@ -29,7 +29,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <EditText
-                android:id="@+id/mla_login_txtPassword"
+                android:id="@+id/loginTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:ems="10"
@@ -38,7 +38,7 @@
                 android:inputType="textPassword" />
 
             <Button
-                android:id="@+id/mla_login_btnLogin"
+                android:id="@+id/loginButtonLogin"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"

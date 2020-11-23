@@ -4,7 +4,7 @@
     android:id="@+id/fragment_deenroll_student_coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/list_bg">
+    android:background="@color/listBg">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/mla_studentdisenroll_spnrsubjectId" />
+                android:id="@+id/studentDisenrollSpinnerSubjectId" />
         </LinearLayout>
 
     </LinearLayout>
@@ -39,7 +39,7 @@
         android:padding="16dp">
 
         <ListView
-            android:id="@+id/mla_studentdisenroll_display_listView"
+            android:id="@+id/studentDisenrollDisplayListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></ListView>
         <TextView
@@ -53,7 +53,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/mla_studentdisenroll_btnDisenroll"
+        android:id="@+id/studentDisenrollButtonDisenroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"

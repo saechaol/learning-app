@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:textSize="17dp"
         android:textColor="@android:color/black"
-        android:id="@+id/mla_txtParentTitle"
+        android:id="@+id/textParentTitle"
         android:textStyle="bold"
         android:text="test"
         android:gravity="center_vertical"

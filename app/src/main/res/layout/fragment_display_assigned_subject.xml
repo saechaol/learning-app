@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:id="@+id/fragment_display_assigned_subject_coordinatorLayout"
-    android:background="@color/list_bg"
+    android:background="@color/listBg"
     android:layout_height="match_parent">
 
 
@@ -27,12 +27,12 @@
         android:layout_marginTop="16dp">
 
 
-        <com.paril.mlaclientapp.ui.view.EmptyRecyclerView
+        <com.saechaol.learningapp.ui.view.EmptyRecyclerView
             android:id="@+id/fragment_display_assigned_subject_recyclerView"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"></com.paril.mlaclientapp.ui.view.EmptyRecyclerView>
+            android:padding="16dp"></com.saechaol.learningapp.ui.view.EmptyRecyclerView>
 
         <RelativeLayout
             android:id="@+id/fragment_display_assigned_subject_relEmptyView"

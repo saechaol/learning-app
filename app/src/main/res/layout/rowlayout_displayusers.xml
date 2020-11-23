@@ -4,7 +4,7 @@
 
     android:layout_height="wrap_content">
 
-    <com.paril.mlaclientapp.ui.view.CustomSwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    <com.saechaol.learningapp.ui.view.CustomSwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
         android:id="@+id/user_item_display_layout_swipeParent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:background="@color/mla_colorPrimary"
+            android:background="@color/colorPrimary"
             android:gravity="center"
             android:padding="10dp"
             android:tag="Bottom3"
@@ -62,7 +62,7 @@
                         style="@style/ListLabelText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/fragment_display_admin_lblName" />
+                        android:text="@string/fragmentDisplayAdminLabelName" />
 
                     <TextView
                         android:id="@+id/user_item_display_layout_txtName"
@@ -87,7 +87,7 @@
                         style="@style/ListLabelText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/fragment_display_admin_lblUserName" />
+                        android:text="@string/fragmentDisplayAdminLabelUserName" />
 
                     <TextView
                         android:id="@+id/user_item_display_layout_txtUserName"
@@ -113,7 +113,7 @@
                     style="@style/ListLabelText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_display_admin_lblEmail" />
+                    android:text="@string/fragmentDisplayAdminLabelEmail" />
 
                 <TextView
                     android:id="@+id/user_item_display_layout_txtEmail"
@@ -126,5 +126,5 @@
 
             </LinearLayout>
         </LinearLayout>
-    </com.paril.mlaclientapp.ui.view.CustomSwipeLayout>
+    </com.saechaol.learningapp.ui.view.CustomSwipeLayout>
 </LinearLayout>

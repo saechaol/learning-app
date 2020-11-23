@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:id="@+id/fragment_enroll_display_coordinatorLayout"
-    android:background="@color/list_bg"
+    android:background="@color/listBg"
     android:layout_height="match_parent">
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/mla_studentenrollview_spnrsubjectId" />
+                android:id="@+id/studentEnrollViewSpinnerSubjectId" />
         </LinearLayout>
 
     </LinearLayout>
@@ -40,7 +40,7 @@
         android:padding="16dp">
 
         <ListView
-            android:id="@+id/mla_studentenrollview_display_listView"
+            android:id="@+id/studentEnrollViewDisplayListView"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></ListView>

@@ -22,7 +22,7 @@
                 android:paddingLeft="20dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text=""
-                android:id="@+id/Mla_itemTask_studentId" />
+                android:id="@+id/itemTaskStudentId" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,12 +40,12 @@
                 android:layout_weight="1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text=""
-                android:id="@+id/Mla_itemTask_grade" />
+                android:id="@+id/itemTaskGrade" />
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/mla_seprator">
+            android:background="@color/separator">
         </View>
     </LinearLayout>
 

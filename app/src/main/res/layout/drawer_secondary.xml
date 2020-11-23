@@ -15,7 +15,7 @@
             android:layout_height="30dp" />
 
         <TextView
-            android:id="@+id/mla_txtSecondaryTitle"
+            android:id="@+id/textSecondaryTitle"
             android:layout_width="wrap_content"
             android:layout_height="34dp"
             android:textSize="17dip"
@@ -26,11 +26,11 @@
 
             />
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/primary_text_color">
-    </View>
+        android:background="@color/primaryTextColor"></View>
 
 </LinearLayout>
 

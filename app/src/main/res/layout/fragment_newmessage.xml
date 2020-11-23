@@ -4,7 +4,7 @@
     android:id="@+id/fragment_new_message_coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/list_bg">
+    android:background="@color/listBg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             app:chip_deletable="true"
             app:chip_deleteIconColor="@android:color/black"
             app:chip_detailed_textColor="@android:color/black"
-            app:chip_detailed_backgroundColor="@color/list_bg"
+            app:chip_detailed_backgroundColor="@color/listBg"
             app:chip_detailed_deleteIconColor="@android:color/black"
             app:filterable_list_backgroundColor="@android:color/white"
             app:filterable_list_textColor="@android:color/black"

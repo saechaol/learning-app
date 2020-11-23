@@ -4,7 +4,7 @@
     android:id="@+id/fragment_update_task_dialog_coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/list_bg">
+    android:background="@color/listBg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/accent_color"></View>
+            android:background="@color/accentColor"></View>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -52,7 +52,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_updatebox_txtTopic"
+                            android:id="@+id/updateBoxTextTopic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -81,7 +81,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_updatebox_txtDescription"
+                            android:id="@+id/updateBoxTextDescription"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -96,7 +96,7 @@
         </ScrollView>
 
         <Button
-            android:id="@+id/mla_updatebox_btnSave"
+            android:id="@+id/updateBoxButtonSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save" />

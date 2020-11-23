@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text=""
-            android:id="@+id/mla_chckbxusers_checkBx"/>
+            android:id="@+id/checkBoxUsersCheckBox"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                 android:paddingLeft="20dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text=""
-                android:id="@+id/mla_chckbxusers_txtname" />
+                android:id="@+id/checkBoxUsersTextName" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                 android:layout_weight="1"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text=""
-                android:id="@+id/mla_chckbxusers_txtemail" />
+                android:id="@+id/checkBoxUsersTextEmail" />
         </LinearLayout>
 
     </LinearLayout>

@@ -24,7 +24,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/activity_view_admin_linUserId"
+                    android:id="@+id/activityViewAdminLoginUserId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -42,7 +42,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/mla_student_txtUserId"
+                            android:id="@+id/studentTextUserId"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -54,7 +54,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/activity_view_admin_linUserName"
+                    android:id="@+id/activityViewAdminLoginUserName"
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_student_txtUserName"
+                            android:id="@+id/studentTextUserName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -103,7 +103,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_student_txtFirstName"
+                            android:id="@+id/studentTextFirstName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -134,7 +134,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_student_txtLastName"
+                            android:id="@+id/studentTextLastName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -164,7 +164,7 @@
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textStyle="bold" />
                         <com.github.reinaldoarrosi.maskededittext.MaskedEditText
-                            android:id="@+id/mla_student_txtTelephone"
+                            android:id="@+id/studentTextTelephone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -199,7 +199,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_student_txtEmailId"
+                            android:id="@+id/studentTextEmailId"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -230,7 +230,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_student_txtAliasMailId"
+                            android:id="@+id/studentTextAliasMailId"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -263,7 +263,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_student_txtHangoutId"
+                            android:id="@+id/studentTextHangoutId"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -276,7 +276,7 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/activity_view_admin_linPassword"
+                    android:id="@+id/activityViewAdminLoginPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:orientation="vertical">
                     <LinearLayout
@@ -295,7 +295,7 @@
                             android:lines="1"
                             android:ems="10"
                             android:hint="******"
-                            android:id="@+id/mla_student_txtPassword"
+                            android:id="@+id/studentTextPassword"
                              />
                     </LinearLayout>
 
@@ -319,7 +319,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/mla_student_txtAddress"
+                            android:id="@+id/studentTextAddress"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"

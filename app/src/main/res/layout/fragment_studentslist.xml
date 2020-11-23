@@ -4,7 +4,7 @@
     android:id="@+id/fragment_display_student_coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/list_bg">
+    android:background="@color/listBg">
 
 
     <LinearLayout
@@ -13,12 +13,12 @@
         android:orientation="vertical">
 
 
-        <com.paril.mlaclientapp.ui.view.EmptyRecyclerView
-            android:id="@+id/mla_student_display_recyyclerView"
+        <com.saechaol.learningapp.ui.view.EmptyRecyclerView
+            android:id="@+id/studentDisplayRecyclerView"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"></com.paril.mlaclientapp.ui.view.EmptyRecyclerView>
+            android:padding="16dp"></com.saechaol.learningapp.ui.view.EmptyRecyclerView>
 
         <RelativeLayout
             android:id="@+id/fragment_display_student_relEmptyView"
@@ -42,5 +42,5 @@
         android:layout_gravity="end|bottom"
         android:layout_margin="10dp"
         android:src="@drawable/ic_add_white"
-        app:backgroundTint="@color/accent_color" />
+        app:backgroundTint="@color/accentColor" />
 </android.support.design.widget.CoordinatorLayout>

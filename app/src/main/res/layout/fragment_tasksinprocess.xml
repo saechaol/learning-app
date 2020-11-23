@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/mla_inprocesstask_spnrSubject" />
+                android:id="@+id/inProgressTaskSpinnerObject" />
         </LinearLayout>
 
     </LinearLayout>
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:dividerHeight="1dp"
             android:divider="@android:color/black"
-            android:id="@+id/mla_inprocesstask_listview"></ListView>
+            android:id="@+id/inProgressTaskListView"></ListView>
         <TextView
             android:id="@+id/empty_text_view"
             android:layout_width="wrap_content"

@@ -4,7 +4,7 @@
     android:id="@+id/fragment_enroll_student_coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/list_bg">
+    android:background="@color/listBg">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                     android:textStyle="bold" />
 
                 <Spinner
-                    android:id="@+id/mla_studentenroll_spnrsubjectId"
+                    android:id="@+id/studentEnrollSpinnerSubjectId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
@@ -46,7 +46,7 @@
             android:padding="16dp">
 
             <ListView
-                android:id="@+id/mla_studentenroll_display_listView"
+                android:id="@+id/studentEnrollDisplayListView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"></ListView>
 
@@ -61,7 +61,7 @@
         </RelativeLayout>
 
         <Button
-            android:id="@+id/mla_studentenroll_btnEnroll"
+            android:id="@+id/studentEnrollButtonEnroll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"

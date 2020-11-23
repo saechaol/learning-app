@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/mla_taskupdate_spnrSubject" />
+                android:id="@+id/taskUpdateSpinnerObject" />
         </LinearLayout>
 
     </LinearLayout>
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:descendantFocusability="beforeDescendants"
-            android:id="@+id/mla_taskupdate_listView"></ListView>
+            android:id="@+id/taskUpdateListView"></ListView>
 
         <RelativeLayout
             android:id="@+id/fragment_updated_task_relEmptyView"

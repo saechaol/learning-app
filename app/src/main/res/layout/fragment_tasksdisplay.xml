@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/Mla_task_subjct_spinner" />
+                android:id="@+id/taskSubjectSpinner" />
         </LinearLayout>
 
     </LinearLayout>
@@ -46,7 +46,7 @@
         >
 
         <ListView
-            android:id="@+id/mla_task_display_listView"
+            android:id="@+id/taskDisplayListView"
             android:padding="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
