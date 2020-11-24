@@ -40,7 +40,7 @@ public class AlertTaskIntentService extends IntentService {
         } else {
             try {
                 GetTaskDetails getTaskDetails = new GetTaskDetails(this);
-                getTaskDetails.runInBackground();
+                getTaskDetails.doInBackground();
             } catch (Exception e) {
 
             }
@@ -91,7 +91,7 @@ public class AlertTaskIntentService extends IntentService {
         }
 
         @Override
-        protected Void runInBackground(Void... v) {
+        protected Void doInBackground(Void... v) {
             try {
 
                 PreferenceManager preferenceManager = new PreferenceManager(AlertTaskIntentService.this);

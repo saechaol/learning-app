@@ -19,7 +19,7 @@ public class Api {
 
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl(CommonUtil.BaseUrl)
+                    .baseUrl(CommonUtil.baseUrl)
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
                     .build();

@@ -132,7 +132,7 @@ public interface ApiInterface {
 
 
     @GET("api/UserTasks/GetTasksByUser")
-    Call<List<TaskDetails>> getTasksByUser(@Query("userId") String userName, @Query("userType") String userType);
+    Call<List<TaskDetails>> getTaskByUser(@Query("userId") String userName, @Query("userType") String userType);
 
 
     @GET("api/Tasks/GetTasksBySubject")
