@@ -28,8 +28,8 @@ public class NotificationPublisher extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.d("onReceive", "show notification " + intent.getStringExtra(TITLE));
-        Log.d("onReceive", "show notification " + intent.getStringExtra(DESCRIPTION));
+        Log.d("onReceive", "show notification: " + intent.getStringExtra(TITLE));
+        Log.d("onReceive", "show notification: " + intent.getStringExtra(DESCRIPTION));
 
         int id = intent.getIntExtra(ID, 0);
 

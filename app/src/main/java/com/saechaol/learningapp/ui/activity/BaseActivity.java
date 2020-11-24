@@ -61,9 +61,9 @@ public class BaseActivity extends AppCompatActivity implements ServiceConnection
 
     protected void onServiceConnected() {
         getSinchServiceInterface().setStartListener(this);
-        if (!preferenceManager.getStringData("userName").equalsIgnoreCase("")) {
+        if (!preferenceManager.getStringData("username").equalsIgnoreCase("")) {
             if (!getSinchServiceInterface().isStarted()) {
-                getSinchServiceInterface().startClient(preferenceManager.getStringData("userName"));
+                getSinchServiceInterface().startClient(preferenceManager.getStringData("username"));
             }
         }
     }
