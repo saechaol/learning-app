@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <com.saechaol.learningapp.ui.view.CustomSwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/user_item_display_layout_swipeParent"
+        android:id="@+id/userItemDisplayLayoutSwipeParent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white">
@@ -20,14 +20,14 @@
             android:weightSum="10">
 
             <ImageView
-                android:id="@+id/user_item_display_layout_imgEditUser"
+                android:id="@+id/userItemDisplayLayoutImgEditUser"
                 style="@style/SwipeIconStyle"
                 android:layout_weight="1"
                 android:src="@drawable/ic_edit_white" />
 
 
             <ImageView
-                android:id="@+id/user_item_display_layout_imgDeleteUser"
+                android:id="@+id/userItemDisplayLayoutImgDeleteUser"
 
                 style="@style/SwipeIconStyle"
                 android:layout_weight="1"
@@ -65,7 +65,7 @@
                         android:text="@string/fragmentDisplayAdminLabelName" />
 
                     <TextView
-                        android:id="@+id/user_item_display_layout_txtName"
+                        android:id="@+id/userItemDisplayLayoutTextName"
                         style="@style/ListDataText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                         android:text="@string/fragmentDisplayAdminLabelUserName" />
 
                     <TextView
-                        android:id="@+id/user_item_display_layout_txtUserName"
+                        android:id="@+id/userItemDisplayLayoutTextUserName"
                         style="@style/ListDataText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                     android:text="@string/fragmentDisplayAdminLabelEmail" />
 
                 <TextView
-                    android:id="@+id/user_item_display_layout_txtEmail"
+                    android:id="@+id/userItemDisplayLayoutTextEmail"
                     style="@style/ListDataText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
