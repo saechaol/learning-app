@@ -7,7 +7,7 @@ import android.util.Patterns;
 
 public class CommonUtil {
 
-    public static String baseUrl = "https://ec2-13-52-212-254.us-west-1.compute.amazonaws.com/MlaWebApi/";
+    public static String baseUrl = "https://mla-lb-924149125.us-west-1.elb.amazonaws.com/MlaWebApi/";
     public static String EXTRA_USER_ADMIN_DATA = "extra_user_admin_data";
     public static String EXTRA_IS_TO_ADD = "extra_is_to_add";
     public static String EXTRA_EDIT_MODE = "extra_edit_mode";
