@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.saechaol.learningapp">
+    
+    
 
     <application
         android:allowBackup="true"
@@ -11,6 +13,66 @@
         android:theme="@style/Theme.LearningApp" >
 
         <service android:name=".sinch.SinchService"></service>
+        <activity android:name=".sinch.VideoCallScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".sinch.CallScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.CallStudentActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".sinch.IncomingCallScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".sinch.PlaceCallActivity" android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:label="@string/titleActivityLogin"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".ui.activity.ViewAdminActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".ui.activity.ViewInstructorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ViewStudentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ViewSubjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.UpdateGradeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+
+        <service
+            android:name=".service.AlertTaskIntentService"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name=".receiver.NotificationPublisher" />
 
     </application>
 

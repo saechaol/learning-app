@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class AdminDetails implements Serializable {
 
     public String adminId;
+    public String password;
     public String username;
     public String firstName;
     public String lastName;
@@ -97,5 +98,9 @@ public class AdminDetails implements Serializable {
     public void setSkypeId(String skype) {
         this.skypeId = skype;
     }
+
+    public String getPassword() { return password; }
+
+    public void setPassword(String pwd) { this.password = pwd; }
 
 }

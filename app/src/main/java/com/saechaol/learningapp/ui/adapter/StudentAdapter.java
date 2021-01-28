@@ -83,18 +83,16 @@ public class StudentAdapter extends RecyclerSwipeAdapter<StudentAdapter.SimpleVi
         }
     }
 
-    private Context mContext;
-    private List<StudentDetails> mDataset;
+    private Context context;
+    private List<StudentDetails> dataset;
 
-    OnItemClickListener<StudentDetails> listener;
+    OnItemClickListener<StudentDetails> studentListener;
 
-    //protected SwipeItemRecyclerMangerImpl mItemManger = new SwipeItemRecyclerMangerImpl(this);
-
-    public StudentAdapter(Context context, List<StudentDetails> objects, boolean isSwipable, OnItemClickListener<StudentDetails> onItemClickListenerener) {
-        this.mContext = context;
+    public StudentAdapter(Context context, List<StudentDetails> objects, boolean isSwipable, OnItemClickListener<StudentDetails> onItemClickListener) {
+        this.context = context;
         this.isSwipable = isSwipable;
-        this.mDataset = objects;
-        this.listener = onItemClickListenerener;
+        this.dataset = objects;
+        this.studentListener = onItemClickListener;
     }
 
     @Override
@@ -105,14 +103,14 @@ public class StudentAdapter extends RecyclerSwipeAdapter<StudentAdapter.SimpleVi
 
     @Override
     public void onBindViewHolder(final SimpleViewHolder viewHolder, final int position) {
-        StudentDetails item = mDataset.get(position);
-        viewHolder.bind(item, listener);
+        StudentDetails item = dataset.get(position);
+        viewHolder.bind(item, studentListener);
         mItemManger.bindView(viewHolder.itemView, position);
     }
 
     @Override
     public int getItemCount() {
-        return mDataset.size();
+        return dataset.size();
     }
 
     @Override

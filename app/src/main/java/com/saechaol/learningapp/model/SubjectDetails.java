@@ -1,9 +1,11 @@
 package com.saechaol.learningapp.model;
 
+import java.io.Serializable;
+
 /**
  * Provides support for retrieving and updating course details
  */
-public class SubjectDetails {
+public class SubjectDetails implements Serializable {
 
     public String subjectId;
     public String title;

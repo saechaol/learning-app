@@ -17,6 +17,11 @@ public class StudentDetails implements Serializable {
     public String aliasMailId;
     public String address;
     public String skypeId;
+    public String password;
+
+    public String getPassword() { return password; }
+
+    public void setPassword(String pwd) { this.password = pwd; }
 
     public String getStudentId() {
         return studentId;

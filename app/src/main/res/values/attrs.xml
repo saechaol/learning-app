@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="MaskedEditText">
+    <declare-styleable name="Working...">
         <attr name="mask" format="string" />
         <attr name="placeholder" format="string" />
     </declare-styleable>

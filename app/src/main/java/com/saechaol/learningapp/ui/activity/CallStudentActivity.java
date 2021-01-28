@@ -70,8 +70,8 @@ public class CallStudentActivity extends BaseActivity {
     public void onResume() {
         super.onResume();
         if (CommonUtil.checkInternetConnection(this)) {
-            GetEnrollBySubjectAPI mlaGetEnrollBySubjectAPI = new GetEnrollBySubjectAPI(this);
-            mlaGetEnrollBySubjectAPI.execute();
+            GetEnrollBySubjectAPI getEnrollBySubjectAPI = new GetEnrollBySubjectAPI(this);
+            getEnrollBySubjectAPI.execute();
         } else {
             showSnackBar(getString(R.string.checkConnection), view.findViewById(R.id.fragment_display_admin_coordinatorLayout));
         }
